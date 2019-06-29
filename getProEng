@@ -1,0 +1,34 @@
+// How to use: Create a menu with the pronouns in desired order. 
+// Ints are assigned to each set, and are returned by the menu. Call function after player pronoun int is set.
+// In dialog where the pronoun is needed, insert [$pNUM] where necessary. (ex. "she is going to the airport" would be 
+// implemented as "[$p1] is going to the airport". 
+
+//Future Features:
+//- Grammar adjustments for they/them pronoun sets and similar.
+//- Context sensitive capitalization (i.e. if it's the first word in the sentence)
+//- More neopronoun options built in. As-is, they are easy to add by copy-pasting existing structures, but there are
+//  plans to add more.
+
+void getPro(){
+	if ($pronoun == 0){
+		$p1 = "she";
+		$p2 = "her";
+		$p3 = "hers";
+	}
+	else if ($pronoun == 1){
+		$p1 = "he";
+		$p2 = "him";
+		$p3 = "his";
+	}
+	else if ($pronoun == 2){
+		$p1 = "they";
+		$p2 = "them";
+		$p3 = "theirs";
+	}
+	else {
+		$p1 = "xe";
+		$p2 = "xim";
+		$p3 = "xirs";
+	}
+	
+}
